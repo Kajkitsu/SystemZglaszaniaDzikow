@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<com.google.android.material.appbar.AppBarLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<com.google.android.material.appbar.MaterialToolbar
+    android:id="@+id/topAppBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    app:title="@string/add_boar"
+    app:menu="@menu/top_app_bar"
+    app:navigationIcon="@drawable/ic_arrow_back_24"
+    style="@style/Widget.MaterialComponents.Toolbar.Primary"
+    />
+
+</com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Województwo"
+            android:layout_marginTop="80dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/voivodeship_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Powiat"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/borough_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/alive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alive"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/dead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dead"
+                android:layout_marginLeft="50dp"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Opis"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/description_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/make_a_photo_button"
+        android:drawableBottom="@drawable/ic_baseline_photo_camera_24"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/sweetPhotoOfPiggy"
+        android:src="@drawable/dzik"
+        />
+
+
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+

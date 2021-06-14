@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Dziki</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_map">Mapa</string>
+    <string name="title_dashboard">Zgłoszenia</string>
+    <string name="title_notifications">Przesłane</string>
+    <string name="title_activity_login_activiy">Info</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="city">Miasto</string>
+    <string name="borough">Powiat</string>
+    <string name="voivodeship">Województwo</string>
+    <string name="title_info">Info</string>
+    <string-array name="voivodeships">
+        <item>dolnoslaskie</item>
+        <item>kujawskopomorskie</item>
+        <item>lubelskie</item>
+        <item>lubuskie</item>
+        <item>lodzkie</item>
+        <item>malopolskie</item>
+        <item>mazowieckie</item>
+        <item>opolskie</item>
+        <item>podkarpackie</item>
+        <item>podlaskie</item>
+        <item>pomorskie</item>
+        <item>slaskie</item>
+        <item>swietokrzyskie</item>
+        <item>warminskomazurskie</item>
+        <item>wielkopolskie</item>
+        <item>zachodniopomorskie</item>
+    </string-array>
+    <string name="fab_content_desc">Przycisk dodawania zgloszenia</string>
+    <string name="extended_fab_label">Dodaj zgłoszenie</string>
+    <string name="add_boar">Dodaj zgłoszenie</string>
+    <string name="accept">go</string>
+    <string name="content_description_more">desc</string>
+    <string name="one">Pierwszy ekran</string>
+    <string name="two">Drugi ekran</string>
+    <string name="tree">Trzeci ekran</string>
+    <string name="four">Czwarty ekran</string>
+    <string name="five">Piąty ekran</string>
+    <string name="description">Opis</string>
+    <string name="alive">Żywy</string>
+    <string name="dead">Martwy</string>
+    <string name="title_activity_choose_marker_details">ChooseMarkerDetailsActivity</string>
+    <string name="ASF_text">Afrykański pomór świń (ASF) to szybko szerząca się, zakaźna choroba wirusowa świń i dzików. ASF powoduje wysoką śmiertelność wśród zakażonych dzików i świń, sięgającą nawet do 100%. Na tę chorobę nie ma obecnie szczepionki ani lekarstwa. Celem aplikacji jest zgłaszanie występowania martwych i żywych dzików, w celu eliminacji padliny i kontorli populacji. Choroba nie jest groźna dla ludzi – jest niebezpieczna tylko dla zwierząt.</string>
+</resources>

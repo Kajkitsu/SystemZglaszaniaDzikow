@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ChooseMarkerDetailsImageViewId"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_arrow_back_24" />
+
+</RelativeLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="270dp"
+    android:textColor="@color/white"
+    android:background="@color/navy1"
+    android:elevation="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/ChooseMarkerDetailsImageViewId">
+
+
+    <TextView
+        android:id="@+id/ChooseTrashActivityTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Zgłoszenie"
+        android:textSize="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/white"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="120dp"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:text=""
+        android:drawableLeft="@drawable/ic_baseline_delete_24"/>
+
+
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="350dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/grey_light"/>
+
+
+        <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data zgłoszenia"
+            android:textSize="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAlignment="textStart"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:background="@color/white"/>
+
+        <TextView
+            android:textSize="16dp"
+            android:id="@+id/report_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Ładowanie..."
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textSize="16dp"
+            android:id="@+id/textViewxdd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Wojewodztwo"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="textStart"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+        <TextView
+            android:textSize="16dp"
+            android:id="@+id/vojewudztwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Ładowanie..."
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textSize="16dp"
+            android:id="@+id/textView7"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Powiat"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="textStart"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+        <TextView
+            android:textSize="16dp"
+            android:id="@+id/poviat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Ładowanie..."
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textSize="16dp"
+            android:id="@+id/textView9"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Opis"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="textStart"
+            android:layout_marginTop="145dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+        <TextView
+            android:textSize="16dp"
+            android:id="@+id/description"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="145dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Ładowanie..."
+            android:scrollHorizontally="false"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
